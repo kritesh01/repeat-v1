@@ -64,6 +64,11 @@
       .aboutImageCrate p{font-weight:500;}
       .aboutImageCrate a{text-decoration: none;color:#000;font-weight:500;}
       .aboutIcons{height:26px;width:26px;}
+
+      /* # ====================================== PAGE 6 ====================================== */
+      .log{padding:30px 20px;overflow:auto;}
+      .logButtonTimesCover{display: flex;justify-content: flex-end;padding-top:5px;padding-bottom: 20px;}
+      .logButtonTimes{height:24px;width:24px;}
       /* # ====================================== PAGE All ====================================== */
       .tac{text-align:center;}
       .flexjcc{display: flex;justify-content: center;}
@@ -107,7 +112,7 @@
               <div class="btnNext landingButton bor" onclick="clickSentenceNextBtn()">Next</div>
             </div>
             <div class="sentenceVeteranBtnCrate flexjcc gap2 pt30">
-              <div class="btnNext landingButton bor" onclick="gotoPage(2)">Cancel</div>
+              <div class="btnNext landingButton bor" onclick="gotoPage(3)">Go Back</div>
               <div class="btnNext landingButton bor" onclick="clickSentenceNextBtn()">Save</div>
             </div>
           </div>
@@ -199,7 +204,7 @@
                   </div>
                 </li>
                 <li class="w100 settingLiDiv bor">
-                  <div class="bor" onclick="gotoPage(2)">
+                  <div class="bor" onclick="setSentenceUpdate()">
                     Update Sentences
                   </div>
                 </li>
@@ -216,6 +221,11 @@
                 <li class="w100 settingLiDiv bor">
                   <div class="bor" onclick="clearLocalStorage()">
                     Clear Data
+                  </div>
+                </li>
+                <li class="w100 settingLiDiv bor">
+                  <div class="bor" onclick="gotoLog()">
+                    Log
                   </div>
                 </li>
                 <li class="w100 settingLiDiv">
@@ -259,10 +269,20 @@
             </div>
             <div class="aboutImageCrate bor">
               <img src="images/instagram.png" class="aboutIcons"/>
-              <a href = "instagram.com/kritesh01/" target=”_blank”>
+              <a href = "https://www.instagram.com/kritesh01/" target=”_blank”>
                 kritesh01
               </a>
             </div>
+          </div>
+          <!-- % ====================================== PAGE 6 ====================================== -->
+          <div class="log page6 allpage bor" data-page="log">
+            <h2 class="mb10 flex jcsb">
+              Log
+              <img src="images/times.png" class="logButtonTimes bor cup" onclick="gotoPage(3)"/>
+            </h2>
+            <ol class="logContainer pl20 bor">
+              
+            </ol>
           </div>
         </div>
       </div>
